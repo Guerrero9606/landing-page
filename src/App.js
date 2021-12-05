@@ -6,7 +6,7 @@ import {
   Route,
 } from "react-router-dom";
 
-//import Rol from './Roles/pages/Rol';
+import Rol from './Roles/pages/Rol';
 //import Login from './Login/Login';
 import Home from './Users/pages/Home';
 //import PrivateRoute from "./Shared/components/PrivateRoute";
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         {/*<PrivateRouteAdmin path="/rol" exact component={Rol}></PrivateRouteAdmin>*/}
         <Route exact path="/" element={ <Home /> } />
+        <Route exact path="/Rol" element={ <Rol /> } />
       </Routes>
     </Router>
   );

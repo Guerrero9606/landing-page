@@ -6,9 +6,20 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button'
 import styles from '../styles/styles.css';
 import { api } from '../../utils/api';
+import { useNavigate } from "react-router-dom";
+import logo from '../../Image/logo.png'
+import Notification from '../components/Notification';
 
 function Home () {
 
+    const navigate = useNavigate();
+    function reload() {
+        navigate(-1);
+    }
+    
+
+    const [notify, setNotify] = useState(false);
+    const [notifyError, setNotifyError] = useState(false);
     const [ list, setList ] = useState({
         Nombres: '',
         Apellidos: '',
@@ -16,8 +27,7 @@ function Home () {
         Correo: '',
         Direccion: '',
         Ciudad: '',
-        Celular: '',
-        WhatsApp: '',
+        Celular: ''
     });
     
     //escucha el cambio de los inputs
@@ -36,14 +46,27 @@ function Home () {
 
     const Guardar = () => {
         GuardarRegistro(list);
+        reload();
     };
 
     const GuardarRegistro = async (list) => {
-        await api.Users.create(list);
+        const res = await api.Users.create(list);
+        alert('Usuario registrado con exito');
     };
+
+    let component;
+    if(notify){
+        component = <Notification setNotify={setNotify} setNotifyError={setNotifyError} show={notify} mensaje='Venta registrada correctamente!'/>
+    }else if(notifyError){
+        component = <Notification setNotify={setNotify} setNotifyError={setNotifyError}  show={notifyError} mensaje='Todos los campos son obligatorios'/>
+    }else{
+        component = null;
+    }
 
     return (
         <>
+        <div className="container-form">
+            <h1>Curso nacional de vigilancia.</h1>
             <Form className="form">
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridNombres">
@@ -103,16 +126,14 @@ function Home () {
                     />
                 </Form.Group>
 
-                <Form.Group className="mb-3" id="formGridCheckbox">
-                    <Form.Check type="checkbox" label="¿Numero celular tiene WhatsApp?" 
-                        onChange={ handleInputtAdd }
-                        name="WhatsApp"
-                    />
-                </Form.Group>
-
-                <Button variant="success" onClick={ Guardar }>Success</Button>{' '}
+                <Button variant="success" onClick={ Guardar } href="/">Success</Button>{' '}
 
                 </Form>
+
+                <a href="https://wa.me/573508833740/?text=Hola,%20quiero%20mas%20informacion." target="_blank">
+                    <img className="imagen" src={logo} width="50" height="50" />
+                </a>
+        </div>
         </>
     );
 }

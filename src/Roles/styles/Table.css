@@ -1,0 +1,12 @@
+.BotonTable {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BotonTable img {
+    width: 3vw;
+    height: 3vh;
+}

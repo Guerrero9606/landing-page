@@ -1,0 +1,13 @@
+.principal-notification{
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  
+  position: absolute;
+  z-index: 2;
+
+  right: 10px;
+  position: fixed;
+
+  padding-bottom: 10px;
+}
