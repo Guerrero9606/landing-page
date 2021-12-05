@@ -66,7 +66,7 @@ function Home () {
     return (
         <>
         <div className="container-form">
-            <h1>Curso nacional de vigilancia.</h1>
+            <h1>CURSO NACIONAL DE VIGILANCIA</h1>
             <Form className="form">
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridNombres">
@@ -131,7 +131,7 @@ function Home () {
                 </Form>
 
                 <a href="https://wa.me/573508833740/?text=Hola,%20quiero%20mas%20informacion." target="_blank">
-                    <img className="imagen" src={logo} width="50" height="50" />
+                    <img className="imagen" src={logo}  />
                 </a>
         </div>
         </>

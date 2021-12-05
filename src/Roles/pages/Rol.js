@@ -9,6 +9,7 @@ import Container from "react-bootstrap/Container";
 import Edit from "../components/Edit";
 import Remove from "../components/Remove";
 import { api } from '../../utils/api.js'
+import {ExportToExcel} from '../../ExportToExcel';
 
 const Titulos = [ 'Nombres', 'Apellidos', 'Cedula', 'Correo', 'Direccion', 'Ciudad', 'Celular'];
 
@@ -19,6 +20,8 @@ function Rol() {
 
   const [ consulta, setConsulta ] = useState(true);
 
+  const fileName = "lista-usuarios";
+  
   //cada vez que recargemos el use entrara en funcion
   useEffect(() => {
     //con esta funcion pedimos todos los datos a la api
@@ -46,6 +49,7 @@ function Rol() {
             <Container className="secondary">
               <Col>
                 <Button variant="secondary" className="border border-5 border-white" href="/">Volver</Button>{ ' ' }
+                <ExportToExcel apiData={users} fileName={fileName} />
                 <Tab.Container defaultActiveKey="first" className="border border-5 Table">
                     <Row className="border border-5 border-white">
                         <Col md="auto">
