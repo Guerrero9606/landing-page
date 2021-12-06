@@ -66,7 +66,11 @@ function Home () {
     return (
         <>
         <div className="container-form">
-            <h1>CURSO NACIONAL DE VIGILANCIA</h1>
+            <div>
+                <h1>Programa nacional de becas para cursos de vigilancia</h1>
+                <h4>Reactivación económica</h4>
+                <h3>¡Inicia el año con una profesión, hágase vigilante y trabaje ya!</h3>
+            </div>
             <Form className="form">
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridNombres">
@@ -126,13 +130,18 @@ function Home () {
                     />
                 </Form.Group>
 
-                <Button variant="success" onClick={ Guardar } href="/">Success</Button>{' '}
+                <Button variant="success" onClick={ Guardar } href="/">Enviar Formulario</Button>{' '}
 
                 </Form>
 
                 <a href="https://wa.me/573508833740/?text=Hola,%20quiero%20mas%20informacion." target="_blank">
                     <img className="imagen" src={logo}  />
                 </a>
+
+            <div>
+                <h3>Plan nacional de reactivación económica, ¡Creo en ti!</h3>
+                <p>¡IMPORTANTE! Quienes resulten seleccionados para ser beneficiarios de estas becas, solo tendrán que cancelar 128.000 pesos por concepto de prácticas de tiro y/o polígono.</p>
+            </div>
         </div>
         </>
     );

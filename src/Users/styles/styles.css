@@ -26,7 +26,7 @@
 
 .imagen {
     position: absolute;
-    top: 30px;
+    top: 50px;
     right: 30px;
     width: 80px;
     height: 80px;
@@ -35,9 +35,21 @@
     background: no-repeat center/cover url('../../Image/background.jpg');
 }
 
-.container-form h1 {
+.container-form h1, h2, h3, h4 {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-form p {
+    text-align: center;
+    padding: 5px 10px 20px;
+    margin: 0;
+    font-weight: 500;
+    font-size: large;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .NotFound {
