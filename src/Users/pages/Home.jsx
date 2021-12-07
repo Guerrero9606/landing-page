@@ -73,62 +73,55 @@ function Home () {
             </div>
             <Form className="form">
                 <Row className="mb-3">
-                    <Form.Group as={Col} controlId="formGridNombres">
-                    <Form.Label>Nombres: </Form.Label>
-                    <Form.Control placeholder="Nombres" type="text"
+                    <Form.FloatingLabel as={Col} controlId="floatingNombres" label="Nombres">
+                    <Form.Control placeholder=" Nombres" type="text"
                         onChange={ handleInputtAdd }
                         name="Nombres"
                     />
-                    </Form.Group>
+                    </Form.FloatingLabel>
 
-                    <Form.Group as={Col} controlId="formGridApellidos">
-                    <Form.Label>Apellidos: </Form.Label>
-                    <Form.Control placeholder="Apellidos" 
+                    <Form.FloatingLabel as={Col} controlId="floatingApellidos" label="Apellidos">
+                    <Form.Control placeholder=" Apellidos" type="text"
                         onChange={ handleInputtAdd }
                         name="Apellidos"
                     />
-                    </Form.Group>
+                    </Form.FloatingLabel>
                 </Row>
 
-                <Form.Group className="mb-3" controlId="formGridDocumento">
-                    <Form.Label>Numero de Cedula: </Form.Label>
+                <Form.FloatingLabel controlId="floatingCedula" label="Cedula" className="mb-3">
                     <Form.Control placeholder="Cedula sin puntos" type="number"
                         onChange={ handleInputtAdd }
                         name="Cedula"
                     />
-                </Form.Group>
+                </Form.FloatingLabel>
 
-                <Form.Group className="mb-3" controlId="formGridCorreo">
-                    <Form.Label>Correo electronico: </Form.Label>
+                <Form.FloatingLabel controlId="floatingEmail" label="Correo Electronico" className="mb-3">
                     <Form.Control placeholder="correo@gmail.com" type="email"
                         onChange={ handleInputtAdd }
                         name="Correo"
                     />
-                </Form.Group>
+                </Form.FloatingLabel>
 
-                <Form.Group className="mb-3" controlId="formGridAddress2">
-                    <Form.Label>Direccion: </Form.Label>
+                <Form.FloatingLabel controlId="floatingDireccion" label="Direccion" className="mb-3">
                     <Form.Control placeholder="Calle 50 #24-23" 
                         onChange={ handleInputtAdd }
                         name="Direccion"
                     />
-                </Form.Group>
+                </Form.FloatingLabel>
 
-                <Form.Group className="mb-3" controlId="formGridCiudad">
-                    <Form.Label>Ciudad: </Form.Label>
+                <Form.FloatingLabel controlId="floatingCiudad" label="Ciudad" className="mb-3">
                     <Form.Control placeholder="Bogota" type="text"
                         onChange={ handleInputtAdd }
                         name="Ciudad"
                     />
-                </Form.Group>
+                </Form.FloatingLabel>
 
-                <Form.Group className="mb-3" controlId="formGridCelular">
-                    <Form.Label>Celular: </Form.Label>
+                <Form.FloatingLabel controlId="floatingCelular" label="Celular" className="mb-3">
                     <Form.Control placeholder="3505550000" 
                         onChange={ handleInputtAdd }
                         name="Celular"
                     />
-                </Form.Group>
+                </Form.FloatingLabel>
 
                 <Button variant="success" onClick={ Guardar } href="/">Enviar Formulario</Button>{' '}
 
@@ -138,7 +131,7 @@ function Home () {
                     <img className="imagen" src={logo}  />
                 </a>
 
-            <div>
+            <div className="footer">
                 <h3>Plan nacional de reactivación económica, ¡Creo en ti!</h3>
                 <p>¡IMPORTANTE! Quienes resulten seleccionados para ser beneficiarios de estas becas, solo tendrán que cancelar 128.000 pesos por concepto de prácticas de tiro y/o polígono.</p>
             </div>

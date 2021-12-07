@@ -32,7 +32,15 @@
     height: 80px;
 }
 .container-form {
-    background: no-repeat center/cover url('../../Image/background.jpg');
+    background: no-repeat center/cover url('../../Image/background2.jpg');
+}
+
+.footer h3 {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    background-color: revert;
 }
 
 .container-form h1, h2, h3, h4 {
@@ -40,6 +48,8 @@
     padding: 10px;
     color: white;
     font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    background-color:rgba(80, 80, 80, 0.4);
 }
 
 .container-form p {
