@@ -147,6 +147,12 @@
     align-items: center;
 }
 
+@media (max-width: 1024px) {
+    .button-what {
+        margin-left: 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .form {
         width: 100vw;
@@ -176,5 +182,18 @@
         right: 20px;
         width: 40px;
         height: 40px;
+    }
+
+    .body-section {
+        width: 100%;
+    }
+
+    .body-aside {
+        width: 0;
+        height: auto;
+    }
+
+    .nav-brand {
+        font-size: x-small;
     }
 }

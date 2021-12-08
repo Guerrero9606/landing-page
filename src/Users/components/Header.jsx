@@ -15,7 +15,7 @@ function Header() {
                     <Navbar.Brand href="#home">
                         <img className="fundacion" src={fundacion} alt="Logo fundacion" />
                     </Navbar.Brand>
-                    <Navbar.Brand >
+                    <Navbar.Brand className="nav-brand">
                         BECAS PARA CURSOS DE VIGILANCIA <br/>
                         Plan nacional de reactivación económica, ¡Creo en ti!
                     </Navbar.Brand>
