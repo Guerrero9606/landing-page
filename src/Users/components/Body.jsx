@@ -18,8 +18,7 @@ function Body() {
                         <li>Diligenciar el formulario</li>
                     </ul>
                     <div className="div-button">
-                        <Button variant="success" size="lg">IR AL FORMULARIO</Button>{' '}
-                        <h3>REGISTRATE</h3>
+                        <Button variant="success" size="lg">¡REGISTRATE!</Button>{' '}
                     </div>
                     <p>¡IMPORTANTE! Quienes resulten seleccionados para ser beneficiarios de estas becas, solo tendrán que cancelar 128.000 pesos por concepto de prácticas de tiro y/o polígono.</p>
 

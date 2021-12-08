@@ -25,7 +25,7 @@ function Header() {
                         <Nav className="button-what">
                             <Nav.Link href="https://wa.me/573508833740/?text=Hola,%20quiero%20mas%20informacion." target="_blank">
                                 <img className="imagen" src={ logo } />
-                                <h6>MAYOR INFORMACIÓN</h6>
+                                <h6>ESCRIBENOS</h6>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
