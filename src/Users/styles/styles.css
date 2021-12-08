@@ -10,6 +10,18 @@
     height: 100px;
 }
 
+.button-what {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.button-what h6 {
+    font-size: small;
+    color: yellowgreen;
+}
+
 .fab {
     padding: 20px;
     font-size: 30px;
@@ -30,7 +42,6 @@
 }
 
 .imagen {
-    position: absolute;
     top: 15px;
     right: 20px;
     width: 50px;
@@ -118,6 +129,16 @@
 
 .body-list li {
     margin-bottom: 10px;
+}
+
+.div-button {
+    display: flex;
+}
+
+.div-button h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: crimson;
 }
 
 .NotFound {

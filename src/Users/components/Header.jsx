@@ -13,9 +13,6 @@ function Header() {
             <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark">
                 <Container>
                     <Navbar.Brand href="#home">
-                        <img src={academia} alt="Logo academia" />
-                    </Navbar.Brand>
-                    <Navbar.Brand href="#home">
                         <img className="fundacion" src={fundacion} alt="Logo fundacion" />
                     </Navbar.Brand>
                     <Navbar.Brand >
@@ -25,9 +22,10 @@ function Header() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
 
-                        <Nav>
-                            <Nav.Link href="https://wa.me/573508833740/?text=Hola,%20quiero%20mas%20informacion.">
+                        <Nav className="button-what">
+                            <Nav.Link href="https://wa.me/573508833740/?text=Hola,%20quiero%20mas%20informacion." target="_blank">
                                 <img className="imagen" src={ logo } />
+                                <h6>MAYOR INFORMACIÓN</h6>
                             </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
